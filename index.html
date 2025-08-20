@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1>Bird Gallery</h1>
+    <h1>Australian Bird Gallery</h1>
     <nav aria-label="primary">
       <ul>
         <li><a href="#" aria-current="page">Home</a></li>
@@ -34,20 +34,19 @@
     src="images/birds/bird1.jpg"
     alt="Rainbow lorikeet perched on a branch; bright green body, blue head, and orange chest"
   >
-  <figcaption>
-    Photo by David Clode on <a href="https://unsplash.com/photos/blue-yellow-and-red-bird-yC3tqMoLuKA">Unsplash</a>.
-  </figcaption>
-</figure>
+<figcaption>
+  Photo by <span id="credit-author">David Clode</span> on
+  <a id="credit-link" href="https://unsplash.com/photos/blue-yellow-and-red-bird-yC3tqMoLuKA">Unsplash</a>.
+</figcaption>
 
 
-
-      <div class="controls" aria-label="Bird selection">
-        <button class="bird-btn" data-bird="1">Rainbow Lorikeet</button>
-        <button class="bird-btn" data-bird="2">Magpie</button>
-        <button class="bird-btn" data-bird="3">Laughing Kookaburra</button>
-        <button class="bird-btn" data-bird="4">Sulphur Crested Cockatoo</button>
-        <button class="bird-btn" data-bird="5">Emu</button>
-      </div>
+<div id="controls" class="controls" role="group" aria-label="Bird selection">
+  <button class="bird-btn" data-bird="1" aria-pressed="true">Rainbow Lorikeet</button>
+  <button class="bird-btn" data-bird="2" aria-pressed="false">Magpie</button>
+  <button class="bird-btn" data-bird="3" aria-pressed="false">Laughing Kookaburra</button>
+  <button class="bird-btn" data-bird="4" aria-pressed="false">Sulphur Crested Cockatoo</button>
+  <button class="bird-btn" data-bird="5" aria-pressed="false">Emu</button>
+</div>
 
       <p id="bird-description">Click a button to see the image and description.</p>
     </article>
@@ -64,12 +63,11 @@
     </aside>
   </main>
 
-  <footer>
-    <p>© 2050 Bird Gallery. All rights reversed.</p>
-  
-    <button id="theme-toggle" type="button" aria-pressed="false">Toggle theme</button>
-  </footer>
+<footer aria-label="Site footer">
+  <small>© 2025 Australian Bird Gallery — photos credited in captions (Unsplash).</small>
+</footer>
 
-  <script src="script.js"></script>
+
+  <script src="script.js"></script
 </body>
 </html>
