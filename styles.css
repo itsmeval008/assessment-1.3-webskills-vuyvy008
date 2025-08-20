@@ -92,9 +92,23 @@ footer {
   border-color: var(--color-accent);
 }
 
-#bird-image { 
-  max-height: 400px;
-  height: auto;
+/* layout container */
+main, .container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* image scales down but not up */
+#bird-image {
   display: block;
-  margin: 1rem 0;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* small screens spacing */
+@media (max-width: 480px) {
+  main, .container { padding: 12px; }
 }
