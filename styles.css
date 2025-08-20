@@ -1,0 +1,100 @@
+:root {
+  /* Light theme palette (5+ variables) */
+  --color-bg: #ffffff;
+  --color-surface: #f5f7fa;
+  --color-text: #222;
+  --color-accent: #2563eb;
+  --color-muted: #6b7280;
+}
+
+:root[data-theme="dark"] {
+  /* Dark theme palette (5+ variables) */
+  --color-bg: #0b1220;
+  --color-surface: #121a2b;
+  --color-text: #e5e7eb;
+  --color-accent: #60a5fa;
+  --color-muted: #9ca3af;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+header {
+  padding: 1rem;
+  background: var(--color-surface);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+nav a:hover { text-decoration: underline; }
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  gap: .5rem;
+  margin: 1rem 0;
+}
+
+.controls button {
+  border: 1px solid var(--color-muted);
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: .5rem .75rem;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  border-color: var(--color-accent);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-surface);
+  border-top: 1px solid #e5e7eb;
+}
+
+#theme-toggle {
+  border: 1px solid var(--color-muted);
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: .5rem .75rem;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  border-color: var(--color-accent);
+}
+
+#bird-image { 
+  max-height: 400px;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}

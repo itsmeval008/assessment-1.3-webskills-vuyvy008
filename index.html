@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Bird Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Bird Gallery</h1>
+    <nav aria-label="primary">
+      <ul>
+        <li><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <form role="search">
+        <input type="search" name="q" placeholder="Search query" />
+        <button type="submit">Go!</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Featured bird</h2>
+
+<figure>
+<img id="bird-image" src="images/birds/bird1.jpg" alt="Rainbow Lorikeet">
+  <figcaption id="bird-caption">
+    Rainbow Lorikeet • Photo by David Clode (Unsplash)
+  </figcaption>
+</figure>
+
+      <div class="controls" aria-label="Bird selection">
+        <button class="bird-btn" data-bird="1">Bird 1</button>
+        <button class="bird-btn" data-bird="2">Bird 2</button>
+        <button class="bird-btn" data-bird="3">Bird 3</button>
+        <button class="bird-btn" data-bird="4">Bird 4</button>
+        <button class="bird-btn" data-bird="5">Bird 5</button>
+      </div>
+
+      <p id="bird-description">Click a button to see the image and description.</p>
+    </article>
+
+    <aside aria-label="Related links">
+      <h2>Related</h2>
+      <ul>
+        <li><a href="#">Oh I do like to be beside the seaside</a></li>
+        <li><a href="#">Oh I do like to be beside the sea</a></li>
+        <li><a href="#">Although in the North of England</a></li>
+        <li><a href="#">It never stops raining</a></li>
+        <li><a href="#">Oh well...</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2050 Bird Gallery. All rights reversed.</p>
+  
+    <button id="theme-toggle" type="button" aria-pressed="false">Toggle theme</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
